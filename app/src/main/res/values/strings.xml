@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">AndroidSamples</string>
+    <string name="which_devices_you_like_the_most">Which devices you like the most?</string>
+    <string name="android">Android</string>
+    <string name="ios">iOS</string>
+    <string name="tutorials">Tutorials</string>
+    <string name="process">Process</string>
+    <string name="process_failed">Process Failed</string>
+    <string name="process_success">Process Success</string>
+    <string name="start_process">Start Process</string>
+    <string name="tutorials_complete">Tutorials Complete</string>
+    <string name="tutorials_begin">Tutorials Begin</string>
 </resources>

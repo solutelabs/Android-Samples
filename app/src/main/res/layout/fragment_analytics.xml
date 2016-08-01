@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.Subhead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="@string/which_devices_you_like_the_most" />
+
+    <RadioGroup
+        android:id="@+id/rg_device_interests"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb_android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/android" />
+
+        <RadioButton
+            android:id="@+id/rb_ios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ios" />
+    </RadioGroup>
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.Subhead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:padding="8dp"
+        android:text="@string/tutorials" />
+
+    <Button
+        android:id="@+id/btn_tutorials_begin"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/tutorials_begin" />
+
+    <Button
+        android:id="@+id/btn_tutorials_complete"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/tutorials_complete" />
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.Subhead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:padding="8dp"
+        android:text="@string/process" />
+
+    <Button
+        android:id="@+id/btn_process_start"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/start_process" />
+
+    <Button
+        android:id="@+id/btn_process_success"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/process_success" />
+
+    <Button
+        android:id="@+id/btn_process_failed"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/process_failed" />
+
+
+</LinearLayout>
