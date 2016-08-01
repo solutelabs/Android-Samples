@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "996475716527",
+    "firebase_url": "https://android-samples-ac771.firebaseio.com",
+    "project_id": "android-samples-ac771",
+    "storage_bucket": "android-samples-ac771.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:996475716527:android:96c4bcf07e9399eb",
+        "android_client_info": {
+          "package_name": "com.solutelabs.androidsamples"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "996475716527-8lvlbu937q7o1jq3qudjssb91261c9q2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsZk7QBRvlGWlc3qqBD1gVOkNo0zGjXeM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
