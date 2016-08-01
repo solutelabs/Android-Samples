@@ -1,6 +1,7 @@
 package com.solutelabs.androidsamples;
 
 import android.support.annotation.NonNull;
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -13,6 +14,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.crash.FirebaseCrash;
+import com.solutelabs.androidsamples.firebase.AnalyticsFragment;
 import com.solutelabs.androidsamples.firebase.auth.AuthHelper;
 
 public class MainActivity extends AppCompatActivity {
@@ -25,8 +27,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         authHelper = new AuthHelper(this);
-
-
     }
 
     @Override
@@ -41,7 +41,27 @@ public class MainActivity extends AppCompatActivity {
         authHelper.onStop();
     }
 
-    public void onCrash(View view) {
-        FirebaseCrash.report(new Exception("Test Android non-fatal error"));
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.btn_crash: {
+                FirebaseCrash.report(new Exception("Test Android non-fatal error"));
+                return;
+            }
+            case R.id.btn_database: {
+                return;
+            }
+            case R.id.btn_analytics: {
+                replace(new AnalyticsFragment());
+                return;
+            }
+        }
     }
+
+    private void replace(Fragment fragment) {
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.content, fragment)
+                .commitNowAllowingStateLoss();
+    }
+
 }

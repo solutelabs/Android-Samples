@@ -9,19 +9,46 @@
     tools:context="com.solutelabs.androidsamples.MainActivity">
 
 
-    <fragment
-        android:id="@+id/fragment_analytics"
-        class="com.solutelabs.androidsamples.firebase.AnalyticsFragment"
+    <HorizontalScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_analytics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:text="Analytics" />
+
+            <Button
+                android:id="@+id/btn_crash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:text="Crash" />
+
+            <Button
+                android:id="@+id/btn_database"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:text="Database" />
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+    <FrameLayout
+        android:id="@+id/content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout="@layout/fragment_analytics" />
+        android:layout_below="@+id/scrollView" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:onClick="onCrash"
-        android:text="Crash" />
 
 </RelativeLayout>
